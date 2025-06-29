@@ -18,9 +18,8 @@ use Yii;
  */
 class Track extends \yii\db\ActiveRecord
 {
-
-    const SCENARIO_CREATE = "create";
-    const SCENARIO_UPDATE = "update";
+    public const SCENARIO_CREATE = "create";
+    public const SCENARIO_UPDATE = "update";
 
     public function init(): void
     {
@@ -40,11 +39,11 @@ class Track extends \yii\db\ActiveRecord
     /**
      * ENUM field values
      */
-    const STATUS_NEW = 'new';
-    const STATUS_IN_PROGRESS = 'in_progress';
-    const STATUS_COMPLETED = 'completed';
-    const STATUS_FAILED = 'failed';
-    const STATUS_CANCELED = 'canceled';
+    public const STATUS_NEW = 'new';
+    public const STATUS_IN_PROGRESS = 'in_progress';
+    public const STATUS_COMPLETED = 'completed';
+    public const STATUS_FAILED = 'failed';
+    public const STATUS_CANCELED = 'canceled';
 
     /**
      * {@inheritdoc}
